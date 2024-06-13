@@ -1,5 +1,3 @@
-Sure, here's how you can bundle the information into a markdown file:
-
 ```markdown
 # Project Information
 
@@ -37,13 +35,22 @@ git clone https://github.com/layan2k/banking-app.git
 cd banking-app
 ```
 
-3. Build the project:
+3. Add application.properties file in the src/main/resources directory and add the following properties:
+
+```properties
+spring.datasource.url=jdbc:mysql://localhost:3306/banking_app?createDatabaseIfNotExist=true
+spring.datasource.username=root
+spring.datasource.password=root
+spring.jpa.hibernate.ddl-auto=update
+```
+
+
+4. Build the project:
 
 ```bash
 mvn clean install
 ```
-
-4. Run the application:
+5. Run the application:
 
 ```bash
 mvn spring-boot:run
@@ -60,4 +67,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## License
 [MIT](https://github.com/layan2k/banking-app/blob/master/LICENSE)
-```
+
