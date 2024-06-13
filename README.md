@@ -1,11 +1,8 @@
-```markdown
-# Project Information
-
 ## Project Name
 Banking App
 
 ## Description
-This is a banking application developed using Java and Spring Boot.
+This is a simple (mini) banking application api developed using Java and Spring Boot.
 
 ## Technologies Used
 - Java 17
